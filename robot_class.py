@@ -80,10 +80,8 @@ class robot:
         measurements = []
         
         ## TODO: iterate through all of the landmarks in a world
-        for i in range(self.num_landmarks):
-        ## TODO: For each landmark    
-            current_landmark = self.landmarks[i]
-            
+        for i,current_landmark in enumerate(self.num_landmarks):
+        ## TODO: For each landmark                
         ## 1. compute dx and dy, the distances between the robot and the landmark
             dx = current_landmark[0]-self.x
             dy = current_landmark[1]-self.y
@@ -96,7 +94,7 @@ class robot:
         ## 3. If either of the distances, dx or dy, fall outside of the internal var, measurement_range
         ##    then we cannot record them; if they do fall in the range, then add them to the measurements list
         ##    as list.append([index, dx, dy]), this format is important for data creation done later
-            if (dx <= self.measurement_range and dy <= self.measurement_range):
+            if (self.measurement_range = -1) or (abs(dx) <= self.measurement_range and abs(dy) <= self.measurement_range):
                 measurements.append([i,dx,dy])
         
         
