@@ -2,15 +2,15 @@
 
 ## Project Overview
 
-In this project, you'll implement SLAM (Simultaneous Localization and Mapping) for a 2 dimensional world! You’ll combine what you know about robot sensor measurements and movement to create a map of an environment from only sensor and motion data gathered by a robot, over time. SLAM gives you a way to track the location of a robot in the world in real-time and identify the locations of landmarks such as buildings, trees, rocks, and other world features. This is an active area of research in the fields of robotics and autonomous systems. 
+In this project, SLAM (Simultaneous Localization and Mapping) for a 2 dimensional world is implemented!  SLAM gives a way to track the location of a robot in the world in real-time and identify the locations of landmarks such as buildings, trees, rocks, and other world features. This is an active area of research in the fields of robotics and autonomous systems. 
 
-*Below is an example of a 2D robot world with landmarks (purple x's) and the robot (a red 'o') located and found using *only* sensor and motion data collected by that robot. This is just one example for a 50x50 grid world; in your work you will likely generate a variety of these maps.*
+*Below is an example of a 2D robot world with landmarks (purple x's) and the robot (a red 'o') located and found using *only* sensor and motion data collected by that robot. This is just one example for a 50x50 grid world;*
 
 <p align="center">
   <img src="./images/robot_world.png" width=50% height=50% />
 </p>
 
-The project will be broken up into three Python notebooks; the first two are for exploration of provided code, and a review of SLAM architectures, **only Notebook 3 and the `robot_class.py` file will be graded**:
+The project will be broken up into three Python notebooks; the first two are for exploration of provided code, and a review of SLAM architectures:
 
 __Notebook 1__ : Robot Moving and Sensing
 
@@ -18,10 +18,10 @@ __Notebook 2__ : Omega and Xi, Constraints
 
 __Notebook 3__ : Landmark Detection and Tracking 
 
+__robot_class.py__ : Robot object with its world
 
-## Project Instructions
+__helpers.py__ : helper function
 
-All of the starting code and resources you'll need to compete this project are in this Github repository. Before you can get started coding, you'll have to make sure that you have all the libraries and dependencies required to support this project. If you have already created a `cv-nd` environment for [exercise code](https://github.com/udacity/CVND_Exercises), then you can use that environment! If not, instructions for creation and activation are below.
 
 ### Local Environment Instructions
 
@@ -75,13 +75,6 @@ __NOTE:__ While some code has already been implemented to get you started, you w
 Your project will be reviewed against the project [rubric](#rubric).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
 
 
-## Project Submission
-
-When you are ready to submit your project, collect all of your project files -- all executed notebooks, and python files -- and compress them into a single zip archive for upload.
-
-Alternatively, your submission could consist of only the **GitHub link** to your repository with all of the completed files.
-
-<a id='rubric'></a>
 ## Project Rubric
 
 ### `robot_class.py`: Implementation of `sense`
