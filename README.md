@@ -70,11 +70,6 @@ jupyter notebook
 __NOTE:__ While some code has already been implemented to get you started, you will need to implement additional functionality and answer all of the questions included in the notebook. __Unless requested, it's suggested that you do not modify code that has already been included.__
 
 
-## Evaluation
-
-Your project will be reviewed against the project [rubric](#rubric).  Review this rubric thoroughly, and self-evaluate your project before submission.  All criteria found in the rubric must meet specifications for you to pass.
-
-
 ## Project Rubric
 
 ### `robot_class.py`: Implementation of `sense`
